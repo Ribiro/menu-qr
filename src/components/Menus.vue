@@ -586,7 +586,7 @@
           this.$store.dispatch('getCategoriesById', this.id);
           this.$store.dispatch('getSubscriptionById', this.id);
           this.$store.dispatch('getSubscriptionById', this.id);
-          this.$store.dispatch('getBusinesses')
+          // this.$store.dispatch('getBusinesses')
           this.$store.dispatch('getABusiness', this.id)
           this.$store.dispatch('get_color', this.id)
           // console.log(this.categories)
