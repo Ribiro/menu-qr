@@ -144,12 +144,12 @@
           <v-row class="mt-1">
             <!--      the non admin video-->
             <template v-for="business in this.$store.state.this_user">
-              <v-col v-if="business.username === id && business.adminname === 'null'" :key="business.phone" lg="3" md="4" sm="6">
+              <v-col v-if="business.username === id && business.adminname === 'null'" :key="business.phone" lg="3" md="4" sm="6" class="mb-4">
                   <v-btn v-show="!show_stream" @click="show_stream=!show_stream" class="green" text>
                     Start Streaming <v-icon>mdi-autorenew</v-icon>
                   </v-btn>
 
-                  <v-card v-show="show_stream" min-width="320" class="h-100">
+                  <v-card v-show="show_stream" class="h-100">
                     <Test v-if="show_stream"></Test>
                     <v-card-actions>
                       <div v-show="!delayShow">
@@ -174,7 +174,7 @@
                   Start Streaming <v-icon>mdi-autorenew</v-icon>
                 </v-btn>
 
-                <v-card v-show="show_stream" min-width="320" class="h-100">
+                <v-card v-show="show_stream" class="h-100">
                   <AdminLivestream v-if="show_stream"></AdminLivestream>
                   <v-card-actions>
                     <div v-show="!delayShow">
@@ -379,7 +379,7 @@
             Start Streaming <v-icon>mdi-autorenew</v-icon>
           </v-btn>
 
-          <v-card v-show="show_stream" min-width="320" class="h-100">
+          <v-card v-show="show_stream" class="h-100">
             <Test v-if="show_stream"></Test>
             <v-card-actions>
               <div v-show="!delayShow">
@@ -404,7 +404,7 @@
             Start Streaming <v-icon>mdi-autorenew</v-icon>
           </v-btn>
 
-          <v-card v-show="show_stream" min-width="320" class="h-100">
+          <v-card v-show="show_stream" class="h-100">
             <AdminLivestream v-if="show_stream"></AdminLivestream>
             <v-card-actions>
               <div v-show="!delayShow">
